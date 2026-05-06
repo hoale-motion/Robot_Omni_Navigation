@@ -1,7 +1,7 @@
 # Hospital Robot Navigation (ROS2 Jazzy)
 Dự án điều hướng robot thông minh trong bệnh viện, chạy trên nền tảng Ubuntu 24.04 và ROS 2 Jazzy Jalisco. Hệ thống cho phép robot di chuyển chính xác đến các phòng bệnh thông qua tọa độ định sẵn.  
 **Tác giả:** Lê Thế Hòa - MSSV:23134023 & Nguyễn Văn Nam - MSSV: 23134038 & Hồ Quốc Việt - MSSV:23134065  
-**Email:** le6403810@gmail.com, hoquocviet45667@gmail.com,
+**Email:** le6403810@gmail.com, vannamngguyen205@gmail.com, hoquocviet45667@gmail.com
 
 <hr style="height:6px;border:none;background-color:#ccc;">
 
@@ -14,14 +14,35 @@ Dự án điều hướng robot thông minh trong bệnh viện, chạy trên n�
 
 <hr style="height:6px;border:none;background-color:#ccc;">
 
-## Yêu cầu hệ thống  
-HĐH: Ubuntu 24.04 LTS  
-ROS 2: Jazzy Jalisco  
-Mô phỏng: Gazebo Harmonic / Ignition  
-Python 3.12+
-## Cài đặt
-git clone https://github.com/hoale-motion/Robot_Omni_Navigation.git   
-cd Robot_Omni_Navigation
+## Setup
+### 1.Yêu cầu hệ thống:  
+- HĐH: Ubuntu 24.04 LTS  
+- ROS 2: Jazzy Jalisco  
+- Mô phỏng: Gazebo Harmonic / Ignition  
+- Python 3.12+
+### Tạo Workspace và cài đặt thư viện:
+\# Tạo ROS 2 workspace  
+mkdir -p ~/ros2_ws/src  
+cd ~/ros2_ws/src 
+
+\# Clone repository của dự án  
+git clone https://github.com/hoale-motion/Robot_Omni_Navigation.git     
+cd Robot_Omni_Navigation 
+
+\# Sửa các đường link tại các file thành đường link của bạn:  
+-Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
+-Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
+
+\# Build & run  
+Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
+1. Ctr+'~' để mở terminal và chạy: ./run_hospital_robot.sh  
+2. Mở thêm 1 terminal mới:  
+    colcon build --symlink-instal  
+    source install/setup.bash  
+    ros2 launch nav2_simple_navigation navigation2.launch.py   
+3. Chạy file: navigation_gui.py  
+
+<hr style="height:6px;border:none;background-color:#ccc;">
 
 ## Cấu trúc thư mục
 ---
