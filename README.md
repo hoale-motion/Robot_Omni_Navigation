@@ -1,13 +1,19 @@
-# Hospital Robot Navigation (ROS2 Jazzy)
+<img width="1115" height="26" alt="image" src="https://github.com/user-attachments/assets/155edbb3-ee9b-4855-ac98-f088854ab0c3" /># Hospital Robot Navigation (ROS2 Jazzy)
 Dự án điều hướng robot thông minh trong bệnh viện, chạy trên nền tảng Ubuntu 24.04 và ROS 2 Jazzy Jalisco. Hệ thống cho phép robot di chuyển chính xác đến các phòng bệnh thông qua tọa độ định sẵn.  
 **Tác giả:** Lê Thế Hòa - MSSV:23134023 & Nguyễn Văn Nam - MSSV: 23134038 & Hồ Quốc Việt - MSSV:23134065  
-**Email:** le6403810@gmail.com,   
+**Email:** le6403810@gmail.com, hoquocviet45667@gmail.com,
+
+<hr style="height:6px;border:none;background-color:#ccc;">
+
 ## Phạm vi của dự án bao gồm:
 1. Xây dựng mô hình robot và môi trường mô phỏng vật lý có độ tin cậy cao.    
 2. Xử lý tín hiệu đầu vào từ cảm biến (LiDAR, IMU, Camera) và dữ liệu Odometry.      
 3. Thiết lập hệ thống TF tree chuẩn xác.    
 4. Xây dựng bản đồ trong môi trường phức tạp (SLAM & Mapping). Sử dụng các thuật toán SLAM hiện đại trên ROS 2 để quét và xây dựng bản đồ Occupancy Grid 2D từ môi trường AWS Hospital World, xử lý nhiễu từ các hành lang dài và các phòng bệnh có cấu trúc giống nhau.  
 5. Cấu hình các sever phục vụ cho Nav2 để tối ưu hóa quỹ đạo di chuyển và khả năng tránh vật cản động/tĩnh.
+
+<hr style="height:6px;border:none;background-color:#ccc;">
+
 ## Yêu cầu hệ thống  
 HĐH: Ubuntu 24.04 LTS  
 ROS 2: Jazzy Jalisco  
@@ -16,6 +22,7 @@ Python 3.12+
 ## Cài đặt
 git clone https://github.com/hoale-motion/Robot_Omni_Navigation.git   
 cd Robot_Omni_Navigation
+
 ## Cấu trúc thư mục
 ---
 
