@@ -1,4 +1,4 @@
-<img width="1115" height="26" alt="image" src="https://github.com/user-attachments/assets/155edbb3-ee9b-4855-ac98-f088854ab0c3" /># Hospital Robot Navigation (ROS2 Jazzy)
+# Hospital Robot Navigation (ROS2 Jazzy)
 Dự án điều hướng robot thông minh trong bệnh viện, chạy trên nền tảng Ubuntu 24.04 và ROS 2 Jazzy Jalisco. Hệ thống cho phép robot di chuyển chính xác đến các phòng bệnh thông qua tọa độ định sẵn.  
 **Tác giả:** Lê Thế Hòa - MSSV:23134023 & Nguyễn Văn Nam - MSSV: 23134038 & Hồ Quốc Việt - MSSV:23134065  
 **Email:** le6403810@gmail.com, hoquocviet45667@gmail.com,
