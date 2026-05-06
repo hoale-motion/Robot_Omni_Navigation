@@ -21,6 +21,7 @@ Dự án điều hướng robot thông minh trong bệnh viện, chạy trên n�
 - Mô phỏng: Gazebo Harmonic / Ignition  
 - Python 3.12+
 ### Tạo Workspace và cài đặt thư viện:
+```
 \# Tạo ROS 2 workspace  
 mkdir -p ~/ros2_ws/src  
 cd ~/ros2_ws/src 
@@ -30,17 +31,16 @@ git clone https://github.com/hoale-motion/Robot_Omni_Navigation.git
 cd Robot_Omni_Navigation 
 
 \# Sửa các đường link tại các file thành đường link của bạn:  
--Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
--Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
-
-\# Build & run  
-Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
-1. Ctr+'~' để mở terminal và chạy: ./run_hospital_robot.sh  
-2. Mở thêm 1 terminal mới:  
-    colcon build --symlink-instal  
-    source install/setup.bash  
-    ros2 launch nav2_simple_navigation navigation2.launch.py   
-3. Chạy file: navigation_gui.py  
+\# Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
+\# Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
+\# Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
+\# 1. Ctr+'~' để mở terminal và chạy: ./run_hospital_robot.sh  
+\# 2. Mở thêm 1 terminal mới:  
+colcon build --symlink-instal  
+source install/setup.bash  
+ros2 launch nav2_simple_navigation navigation2.launch.py   
+\# 3. Chạy file: navigation_gui.py  
+```
 
 <hr style="height:6px;border:none;background-color:#ccc;">
 
@@ -102,16 +102,3 @@ Robot_Omni_Navigation/
 ```
 
 ---
-
-## Sử dụng
-Sửa các đường link tại các file thành đường link của bạn:  
--Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
--Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
-Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
-1. Ctr+'~' để mở terminal và chạy: ./run_hospital_robot.sh  
-2. Mở thêm 1 terminal mới:  
-    colcon build --symlink-instal  
-    source install/setup.bash  
-    ros2 launch nav2_simple_navigation navigation2.launch.py   
-3. Chạy file: navigation_gui.py  
-
