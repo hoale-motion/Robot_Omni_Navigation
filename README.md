@@ -3,12 +3,12 @@ Dự án điều hướng robot thông minh trong bệnh viện, chạy trên n�
 **Tác giả:** Lê Thế Hòa - MSSV:23134023 & Nguyễn Văn Nam - MSSV: 23134038 & Hồ Quốc Việt - MSSV:23134065  
 **Email:** le6403810@gmail.com,   
 ## Phạm vi của dự án bao gồm:
-1. Xây dựng mô hình robot và môi trường mô phỏng vật lý có độ tin cậy cao.  
-2.Xử lý tín hiệu đầu vào từ cảm biến (LiDAR, IMU, Camera) và dữ liệu Odometry.  
-3.Thiết lập hệ thống TF tree chuẩn xác.  
-4.Xây dựng bản đồ trong môi trường phức tạp (SLAM & Mapping). Sử dụng các thuật toán SLAM hiện đại trên ROS 2 để quét và xây dựng bản đồ Occupancy Grid 2D từ môi trường AWS Hospital World, xử lý nhiễu từ các hành lang dài và các phòng bệnh có cấu trúc giống nhau.  
-5.Cấu hình các sever phục vụ cho Nav2 để tối ưu hóa quỹ đạo di chuyển và khả năng tránh vật cản động/tĩnh.
-## Yêu cầu hệ thống
+1. Xây dựng mô hình robot và môi trường mô phỏng vật lý có độ tin cậy cao.    
+2. Xử lý tín hiệu đầu vào từ cảm biến (LiDAR, IMU, Camera) và dữ liệu Odometry.      
+3. Thiết lập hệ thống TF tree chuẩn xác.    
+4. Xây dựng bản đồ trong môi trường phức tạp (SLAM & Mapping). Sử dụng các thuật toán SLAM hiện đại trên ROS 2 để quét và xây dựng bản đồ Occupancy Grid 2D từ môi trường AWS Hospital World, xử lý nhiễu từ các hành lang dài và các phòng bệnh có cấu trúc giống nhau.  
+5. Cấu hình các sever phục vụ cho Nav2 để tối ưu hóa quỹ đạo di chuyển và khả năng tránh vật cản động/tĩnh.
+## Yêu cầu hệ thống  
 HĐH: Ubuntu 24.04 LTS  
 ROS 2: Jazzy Jalisco  
 Mô phỏng: Gazebo Harmonic / Ignition  
