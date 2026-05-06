@@ -31,10 +31,12 @@ git clone https://github.com/hoale-motion/Robot_Omni_Navigation.git
 cd Robot_Omni_Navigation 
 
 # Sửa các đường link tại các file thành đường link của bạn:  
-# Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
+# Dòng 770 file omni_base.urdf:  
+<parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
 # Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
 # Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
-# 1. Ctr+'~' để mở terminal và chạy: ./run_hospital_robot.sh  
+# 1. Ctr+'~' để mở terminal và chạy:  
+ ./run_hospital_robot.sh  
 # 2. Mở thêm 1 terminal mới:  
 colcon build --symlink-instal  
 source install/setup.bash  
